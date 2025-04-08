@@ -139,12 +139,25 @@ fun ResepDetailScreen(resepId: Int, navController: NavController) {
                         modifier = Modifier.padding(vertical = 8.dp)
                     )
 
+                    val completedSteps = remember { mutableStateMapOf<Int, Boolean>() }
+
                     recipe.steps.forEachIndexed { index, step ->
-                        Text(
-                            text = "${index + 1}. $step",
-                            style = MaterialTheme.typography.bodyMedium,
-                            modifier = Modifier.padding(vertical = 4.dp)
-                        )
+                        Row(
+                            modifier = Modifier.padding(vertical = 4.dp),
+                            verticalAlignment = Alignment.Top
+                        ) {
+                            Checkbox(
+                                checked = completedSteps[index] ?: false,
+                                onCheckedChange = { isChecked ->
+                                    completedSteps[index] = isChecked
+                                }
+                            )
+                            Text(
+                                text = "${index + 1}. $step",
+                                style = MaterialTheme.typography.bodyMedium,
+                                modifier = Modifier.padding(start = 8.dp)
+                            )
+                        }
                     }
                 }
             }
