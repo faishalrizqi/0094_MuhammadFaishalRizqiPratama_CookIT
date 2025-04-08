@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CookIT</string>
+    <string name="home">Beranda</string>
+    <string name="categories">Kategori</string>
+    <string name="welcome_message">Temukan resep sempurna dengan CookIT!</string>
+    <string name="search_recipes">Cari resep...</string>
+    <string name="popular_recipes">Resep Populer</string>
+    <string name="all_recipes">Semua Resep</string>
+    <string name="ingredients">Bahan-bahan</string>
+    <string name="steps">Langkah-langkah</string>
+    <string name="cooking_time">Waktu Memasak: %1$d menit</string>
+    <string name="servings">Porsi: %1$d</string>
+    <string name="share">Bagikan</string>
+    <string name="share_recipe">Coba lihat resep %1$s yang saya temukan di CookIT!</string>
+</resources>
