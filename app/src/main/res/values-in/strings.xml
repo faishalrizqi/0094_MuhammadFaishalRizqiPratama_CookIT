@@ -12,5 +12,5 @@
     <string name="cooking_time">Waktu Memasak: %1$d menit</string>
     <string name="servings">Porsi: %1$d</string>
     <string name="share">Bagikan</string>
-    <string name="share_recipe">Coba lihat resep %1$s yang saya temukan di CookIT!</string>
+    <string name="share_recipe_full">Coba lihat resep %1$s yang saya temukan di CookIT!\n\nBahan-bahan:\n%2$s\n\nLangkah-langkah:\n%3$s</string>
 </resources>

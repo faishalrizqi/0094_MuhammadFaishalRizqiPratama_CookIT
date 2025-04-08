@@ -37,12 +37,20 @@ fun ResepDetailScreen(resepId: Int, navController: NavController) {
                 },
                 actions = {
                     IconButton(onClick = {
+                        val recipeName = recipe?.name ?: ""
+                        val ingredients = recipe?.ingredients?.joinToString("\n• ", "• ") ?: ""
+                        val steps = recipe?.steps?.mapIndexed { index, step -> "${index + 1}. $step" }?.joinToString("\n") ?: ""
+
+                        val shareText = context.getString(
+                            R.string.share_recipe_full,
+                            recipeName,
+                            ingredients,
+                            steps
+                        )
                         val shareIntent = Intent().apply {
                             action = Intent.ACTION_SEND
                             putExtra(
-                                Intent.EXTRA_TEXT,
-                                context.getString(R.string.share_recipe, recipe?.name ?: "")
-                            )
+                                Intent.EXTRA_TEXT, shareText)
                             type = "text/plain"
                         }
                         context.startActivity(Intent.createChooser(shareIntent, null))

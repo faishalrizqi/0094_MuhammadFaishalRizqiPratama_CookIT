@@ -11,5 +11,5 @@
     <string name="cooking_time">Cooking Time: %1$d min</string>
     <string name="servings">Servings: %1$d</string>
     <string name="share">Share</string>
-    <string name="share_recipe">Check out this amazing %1$s recipe I found on CookIT!</string>
+    <string name="share_recipe_full">Check out this amazing %1$s recipe I found on CookIT!\n\nIngredients:\n%2$s\n\nSteps:\n%3$s</string>
 </resources>
