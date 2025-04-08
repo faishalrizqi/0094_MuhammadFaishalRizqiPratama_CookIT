@@ -29,9 +29,9 @@ fun AppNavigation(navController: NavHostController) {
         }
         composable(
             route = Screen.ResepDetail.route,
-            arguments = listOf(navArgument("recipeId") { type = NavType.IntType })
+            arguments = listOf(navArgument("resepId") { type = NavType.IntType })
         ) { backStackEntry ->
-            val resepId = backStackEntry.arguments?.getInt("recipeId") ?: 0
+            val resepId = backStackEntry.arguments?.getInt("resepId") ?: 0
             ResepDetailScreen(
                 resepId = resepId,
                 navController = navController
