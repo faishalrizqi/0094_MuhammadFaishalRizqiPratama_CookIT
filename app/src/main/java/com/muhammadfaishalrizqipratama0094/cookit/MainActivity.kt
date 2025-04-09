@@ -24,7 +24,6 @@ class MainActivity : ComponentActivity() {
     }
 }
 
-@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun CookITApp() {
     val navController = rememberNavController()

@@ -10,6 +10,14 @@
     <string name="steps">Steps</string>
     <string name="cooking_time">Cooking Time: %1$d min</string>
     <string name="servings">Servings: %1$d</string>
+    <string name="profile">Profile</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="save">Save</string>
+    <string name="name_error">Name cannot be empty</string>
+    <string name="email_error">Invalid email format</string>
+    <string name="profile_updated">Profile updated successfully</string>
+    <string name="edit">Edit</string>
     <string name="share">Share</string>
     <string name="share_recipe_full">Check out this amazing %1$s recipe I found on CookIT!\n\nIngredients:\n%2$s\n\nSteps:\n%3$s</string>
 </resources>

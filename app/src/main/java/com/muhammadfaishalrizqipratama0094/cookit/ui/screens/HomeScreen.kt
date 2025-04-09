@@ -17,7 +17,6 @@ import com.muhammadfaishalrizqipratama0094.cookit.model.ResepData
 import com.muhammadfaishalrizqipratama0094.cookit.navigation.Screen
 import com.muhammadfaishalrizqipratama0094.cookit.ui.components.KartuResep
 
-@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun HomeScreen(navController: NavController) {
     var search by remember { mutableStateOf("") }
@@ -27,7 +26,6 @@ fun HomeScreen(navController: NavController) {
             .fillMaxSize()
             .padding(16.dp)
     ) {
-        // Welcome Message
         Text(
             text = stringResource(id = R.string.welcome_message),
             style = MaterialTheme.typography.headlineSmall,
@@ -35,7 +33,6 @@ fun HomeScreen(navController: NavController) {
             modifier = Modifier.padding(bottom = 16.dp)
         )
 
-        // Search Bar
         OutlinedTextField(
             value = search,
             onValueChange = { search = it },
@@ -52,14 +49,12 @@ fun HomeScreen(navController: NavController) {
             singleLine = true
         )
 
-        // Popular Recipes
         Text(
             text = stringResource(id = R.string.all_recipes),
             style = MaterialTheme.typography.titleLarge,
             modifier = Modifier.padding(bottom = 8.dp)
         )
 
-        // Recipe List
         LazyColumn(
             contentPadding = PaddingValues(bottom = 80.dp)
         ) {

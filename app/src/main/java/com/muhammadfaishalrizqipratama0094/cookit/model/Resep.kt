@@ -10,5 +10,4 @@ data class Resep(
     val cookingTime: Int, // dalam menit
     val servings: Int,
     val category: String,
-    val isFavorite: Boolean = false
 )

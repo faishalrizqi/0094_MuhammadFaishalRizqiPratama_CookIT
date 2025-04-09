@@ -11,6 +11,14 @@
     <string name="steps">Langkah-langkah</string>
     <string name="cooking_time">Waktu Memasak: %1$d menit</string>
     <string name="servings">Porsi: %1$d</string>
+    <string name="profile">Profil</string>
+    <string name="name">Nama</string>
+    <string name="email">Email</string>
+    <string name="save">Simpan</string>
+    <string name="name_error">Nama tidak boleh kosong</string>
+    <string name="email_error">Format email tidak valid</string>
+    <string name="profile_updated">Profil berhasil diperbarui</string>
+    <string name="edit">Edit</string>
     <string name="share">Bagikan</string>
     <string name="share_recipe_full">Coba lihat resep %1$s yang saya temukan di CookIT!\n\nBahan-bahan:\n%2$s\n\nLangkah-langkah:\n%3$s</string>
 </resources>

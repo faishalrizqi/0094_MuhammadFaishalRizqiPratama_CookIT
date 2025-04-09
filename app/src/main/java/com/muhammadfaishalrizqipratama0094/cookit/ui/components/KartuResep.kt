@@ -19,7 +19,6 @@ import androidx.compose.ui.unit.dp
 import com.muhammadfaishalrizqipratama0094.cookit.R
 import com.muhammadfaishalrizqipratama0094.cookit.model.Resep
 
-@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun KartuResep(resep: Resep, onClick: () -> Unit) {
     Card(

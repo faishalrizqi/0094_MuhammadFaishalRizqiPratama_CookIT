@@ -3,6 +3,7 @@ package com.muhammadfaishalrizqipratama0094.cookit.ui.components
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Category
 import androidx.compose.material.icons.filled.Home
+import androidx.compose.material.icons.filled.Person
 import androidx.compose.material3.Icon
 import androidx.compose.material3.NavigationBar
 import androidx.compose.material3.NavigationBarItem
@@ -26,7 +27,8 @@ data class BottomNavItem(
 fun BottomNavBar(navController: NavController) {
     val items = listOf(
         BottomNavItem(R.string.home, Icons.Default.Home, Screen.Home.route),
-        BottomNavItem(R.string.categories, Icons.Default.Category, Screen.Categories.route)
+        BottomNavItem(R.string.categories, Icons.Default.Category, Screen.Categories.route),
+        BottomNavItem(R.string.profile, Icons.Default.Person, Screen.Profile.route)
     )
 
     val navBackStackEntry by navController.currentBackStackEntryAsState()
